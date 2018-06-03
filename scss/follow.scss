@@ -1,0 +1,78 @@
+.follow {
+  .follow__title {
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 140px;
+    position: relative;
+    color: #5a5957;
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      width: 62px;
+      height: 3px;
+      background-color: #d07c7c;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 55px;
+    }
+  }
+  .social-media {
+    margin: 60px 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 30px;
+    .social-media__icon {
+      width: 63px;
+      height: 63px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: #e6b5b5;
+        border-radius: 50%;
+        border: solid 1px #e6b5b5;
+
+        .social-media__link {
+          svg {
+            path {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+      &:hover::after {
+        content: "";
+        position: absolute;
+        top: -6.75px;
+        left: -6.75px;
+        background: transparent;
+        width: 75px;
+        height: 75px;
+        border: solid 1px #e6b5b5;
+        border-radius: 50%;
+      }
+      .social-media__link {
+        svg {
+          path {
+            fill: #848282;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .follow {
+    .social-media {
+        width: 90%;
+    }
+  }
+}

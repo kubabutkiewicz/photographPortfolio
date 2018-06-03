@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+  height: 100%;
+}
+
+
+.flex.flex__center {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flex.flex__space-between {
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 710px) {
+    .flex {
+        flex-direction: column;
+    }
+}

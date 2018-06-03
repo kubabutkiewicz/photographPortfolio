@@ -1,0 +1,27 @@
+.footer {
+    margin-top: 25px;
+    .up-link {
+        width: 16px;
+        height: 9px;
+    }
+    .footer__author ,.footer__hobby {
+        font-family: 'Dancing Script' ,cursive;
+    }
+    .footer__author {
+        font-size: 21px;
+        margin-bottom: 4px;
+        margin-top: 26px;
+    }
+    .footer__hobby {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 22px;
+
+    }
+    .footer__copyright {
+        color: #848282;
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 27px;
+    }
+}

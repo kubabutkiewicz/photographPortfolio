@@ -1,0 +1,52 @@
+.video {
+  background-image: url("/assets/photo@3x.png");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .container {
+      cursor: pointer;
+      position: relative;
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -30px;
+      border-top: 2px solid #000;
+      transition: all 0.3s ease-in-out;
+    }
+    &::before {
+      border-left: 2px solid #000;
+      left: -40px;
+    }
+    &::after {
+      border-right: 2px solid #000;
+      right: -40px;
+    }
+    .border-playbutton::before,
+    .border-playbutton::after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -30px;
+      border-bottom: 2px solid #000;
+      transition: all 0.3s ease-in-out;
+    }
+    .border-playbutton::after {
+      right: -40px;
+      border-right: 2px solid #000;
+    }
+    .border-playbutton::before {
+      left: -40px;
+      border-left: 2px solid #000;
+    }
+  }
+}

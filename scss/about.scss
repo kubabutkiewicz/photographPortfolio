@@ -1,0 +1,28 @@
+#about {
+    
+    height: 50vh;
+    
+    .about__title {
+        text-transform: uppercase;
+        color: #5a5957;
+        font-family: "Playfair Display";
+        position: relative;
+        margin-bottom: 31px;
+    }
+    .about__title::after {
+        content: '';
+        position: absolute;
+        bottom: -100%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        width: 80px;
+        height: 3px;
+        background-color: #d07c7c;
+    }
+    .about__desc {
+        color: #848282;
+        width: 50%;
+        font-size: 14px;
+        line-height: 1.86;
+    }
+}

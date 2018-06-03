@@ -1,0 +1,23 @@
+@import "header";
+@import "nav";
+@import "about";
+@import "works";
+@import "testimonials";
+@import "video";
+@import "follow";
+@import "contact";
+@import "footer";
+body {
+  font-family: "Raleway";
+  box-sizing: border-box;
+  
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+button {
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}

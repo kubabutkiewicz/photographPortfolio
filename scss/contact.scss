@@ -1,0 +1,74 @@
+#contact {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        opacity: 0.25;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+  .contact__title {
+    text-transform: uppercase;
+    color: #5a5957;
+    font-family: "Playfair Display";
+    position: relative;
+    margin-bottom: 31px;
+    margin-top: 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -100%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      width: 80px;
+      height: 3px;
+      background-color: #d07c7c;
+    }
+  }
+  .desc {
+    color: #848282;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .form {
+      display: grid;
+      margin-top: 54px;
+      margin-bottom: 120px;
+      height: 400px;
+      grid-gap: 16px;
+      color: #848282;
+      grid-template-rows: repeat(5,1fr);
+      grid-template-columns: repeat(2,1fr);
+      #name__input,#email__input {
+          grid-column: span 2;
+          outline: none;
+          border: solid 0.5px #d07c7c;
+          padding: 20px 30px;
+      }
+      #text__input {
+          outline: none;
+          grid-column: span 2;
+          grid-row: span 3;
+          resize: none;
+          border: solid 0.5px #d07c7c;
+          padding: 20px 30px;
+      }
+      .require {
+          font-weight: 300;
+          font-size: 14px;
+      }
+      .btn__submit {
+        background-color: #d07c7c;
+        color: #ffffff;
+        width: 145px;
+        cursor: pointer;
+        justify-self: end;
+        transition: all 0.3s ease-in-out;
+        border: 0;
+        &:hover {
+            background-color: #848282;
+        }
+      }
+  }
+}

@@ -1,0 +1,59 @@
+.main__nav {
+  border-bottom: 2px solid #ebebeb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  .nav__logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    margin-left: 54px;
+    a {
+      color: #838181;
+    }
+  }
+  .nav__menu {
+    overflow: hidden;
+    .menu__item {
+      margin: 0 30px;
+      list-style-type: none;
+      .menu__link {
+        color: #696969;
+        padding-bottom: 3.5px;
+      }
+      .menu__link:hover {
+        border-bottom: 2px solid #d07c7c;
+      }
+    }
+  }
+  .nav__menu.open {
+    transform: translateX(0);
+  }
+  .menu__btn {
+    position: absolute;
+    right: 5%;
+    font-size: 20px;
+    display: none;
+    margin-right: 54px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 710px) {
+  .main__nav {
+    border: 0;
+    .nav__menu {
+      transform: translateX(100%);
+      margin-top: 60px;
+      transition: all 0.3s ease-in-out;
+      background: rgba(255, 255, 255, 0.5);
+
+      .menu__item {
+        padding-bottom: 20px;
+      }
+    }
+    .menu__btn {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.testiomonials {
+  color: #848282;
+  .slide {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .works__title--lighten {
+      font-family: "Playfair Display";
+      font-size: 25px;
+      font-weight: normal;
+      position: relative;
+      &:after {
+        content: "";
+        width: 32px;
+        height: 3px;
+        background-color: #d07c7c;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 55px;
+      }
+    }
+    .desc {
+      width: 35%;
+      font-size: 21px;
+      margin-top: 50px;
+      font-weight: 300;
+    }
+    .author {
+      font-size: 14px;
+      font-weight: 300;
+      color: #a0a0a0;
+      margin-top: 7px;
+    }
+  }
+  .bullets {
+    margin-top: 21.5px;
+    display: flex;
+    justify-content: space-around;
+    width: 5%;
+    margin-bottom: 140px;
+    .bullets__point {
+      width: 9px;
+      height: 9px;
+      background-color: #d3d3d3;
+      border-radius: 50%;
+      cursor: pointer;
+      &.active {
+        width: 12px;
+        height: 12px;
+        background-color: #d07c7c;
+        transform: translate(0, -2px);
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .testiomonials {
+    .slide {
+      .desc {
+        width: 60%;
+      }
+    }
+    .bullets {
+      width: 20%;
+    }
+  }
+}
